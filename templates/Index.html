@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" class="html">
 <head>
+    <style>
+        .html {
+            background-color: darkcyan;
+        }
+        .title {
+            color: gold;
+        }
+        .whiteText {
+            color: white;
+            font-size: 20px;
+        }
+        .flex-container {
+            display: flex;
+        }
+        .flex-child {
+            background-color: black;
+            margin-right: 150px;
+        }
+        .flex-child:first-child {
+            background-color: blue;
+            margin-right: 440px;
+        }
+        .flex-child:second-child {
+            background-color: darkblue;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to FurryCode.com- Home Page - Everything Furry Code</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <header>
-    <div class="i">
-        <h1 class="title">FURRYCODE.COM</h1>
+    <div class="flex-container">
+        <div class="flex-child time">
+            <h1 class="whiteText">Time</h1>
+        </div>
+        <div class="flex-child title">
+            <h1 class="title">FURRYCODE.COM</h1>
+        </div>
+        <div class="flex-child login">
+            <h1 class="whiteText">You Are</h1>
+            <h1 class="whiteText">Logged</h1>
+            <h1 class="whiteText">OUT</h1>
+        </div>
     </div>
 </header>
 <body>
