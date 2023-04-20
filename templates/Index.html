@@ -3,66 +3,32 @@
 <head>
     <!-- CSS Styles -->
     <style>
-        .html {
-            background-color: darkcyan;
-        }
-        .title {
-            color: gold;
-            font-size: 50px;
-        }
-        .whiteText {
-            color: white;
-            font-size: 20px;
-        }
-        .titlediv {
-            text-align: center;
-            align-items: center;
-            background-color: black;
-        }
-        .timediv {
-            width: 150px;
-            text-align: center;
-            align-items: center;
-            background-color: darkblue;
-        }
-        .loggeddiv {
-            text-align: center;
-            align-items: center;
-            background-color: darkblue;
-        }
-        .flex-container {
-            background-color: aquamarine;
-            display: flex;
-            padding-left: 350px;
-        }
-        .flex-container > div {
-            margin: 5px;
-            font-size: 30px;
-            height: 100px;
-            align-items: center;
-            text-align: center;
-        }
-        .imgMax {
-            align-self: left;
-            background-image: url('images/max2.png');
-        }
-        .maindiv {
-            background-color: white;
-            padding-left: 20px;
-        }
-        .maindivv {
-            padding-left: 150px;
-            padding-right: 150px;
-            padding-top: 30px;
-            padding-bottom: 10px;
-        }
+        .html {background-color: darkcyan;}
+        .title {color: gold; font-size: 50px;}
+        .whiteText {color: white; font-size: 20px;}
+        .mainbodytext {font-size: 15px;}
+        .mainproblemText {font-size: 15px;}
+        .titlediv {text-align: center; align-items: center; background-color: black}
+        .timediv {width: 150px; text-align: center; align-items: center; background-color: darkblue;}
+        .loggeddiv {text-align: center; align-items: center; background-color: darkblue;}
+        .flex-container {background-color: black; display: flex; padding-left: 350px;}
+        .flex-container > div {margin: 5px; font-size: 30px; height: 90px; align-items: center; text-align: center;}
+        .maindiv {padding-left: 150px; padding-right: 150px; padding-bottom: 10px; padding-top: 1px;}
+        .mainOutline {border-style: solid; border-width: 3px; border-radius: 10px;}
+        .main {background-color: white; padding-left: 20px; text-align: center; padding-right: 20px; padding-bottom: 20px;}
+        .mainbody {text-align: center; padding-right: 20px;}
+        .menuselect {background-color: aqua;}
+        .DaysOnline {background-color: blueviolet;}
+        .mainProblems {outline-style: solid; outline-color: blue;}
+        .mainProblemsDiv {padding-left: 330px; padding-right: 330px;}
+        .footerDiv {padding-left: 150px; padding-right: 150px;}
+        .footerText {background-color: white; text-align: center; border-style: solid; border-width: 3px; border-radius: 10px;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to FurryCode.com- Home Page - Everything Furry Code</title>
 </head>
-
 <!-- The very top part of the website. -->
 <div class="flex-container">
     <div class="timediv">
@@ -78,12 +44,41 @@
 </div>
 <!-- Body Of The Website -->
 <body>
-    <!-- The main page box -->
-    <div class="maindivv">
-        <div class="maindiv">
-            <img class="imgMax" alt="max">
-            <h1 class="maintitle">Welcome to... <b>FurryCode.com</b></h1>
+    <!-- The Main page box -->
+    <div class="maindiv">
+        <!-- The border box -->
+        <div class="mainOutline">
+            <!-- The main page with all the elements -->
+            <div class="main">
+                <h1 class="maintitle">Welcome to... <b>FurryCode.com</b></h1>
+                <div class="mainbody">
+                    <h1 class="mainbodytext"><b>H</b>ere you will find 'The Furry Code', a Furry Code Creator, and a Furry Code Decoder. This site has one purpose, and you guessed it... <b>THE FURRY CODE</b>. Membership is required to access most areas of this site.</h1>
+                    <br>
+                    <h1 class="mainbodytext"><b>G</b>et your own <u>Personal Furry Code Profile</u>. For complete details, visit our <u><a href="http://www.furrycode.com/a_welcome.html">Welcome Page</a></u>.</h1>
+                    <br>
+                    <h1 class="mainbodytext">We have a <u>Fully Functional</u> <b>English Decoder, English Creator, German Decoder</b>, and <b>German Creator</b>. Popup instructions for both Furry Code Creators can be switched between <u>English and German</u>.
+                    </h1>
+                </div>
+                <div class="menuselect">
+                    <h1>Menu Section</h1>
+                </div>
+                <div class="DaysOnline">
+                    <h1>Days Online Section</h1>
+                </div>
+                <div class="mainProblemsDiv">
+                    <div class="mainProblems">
+                        <h1 class="mainproblemText">If anyone runs across any problem, or FLASH, please let me know</h1>
+                        <h1 class="mainproblemText">using our Contact Form. Thank You, Max</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="footerDiv">
+        <div class="footerText">
+            <h1 class="mainproblemText">Footer Section</h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
