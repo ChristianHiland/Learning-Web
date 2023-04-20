@@ -7,20 +7,24 @@
         .title {color: gold; font-size: 50px;}
         .whiteText {color: white; font-size: 20px;}
         .mainbodytext {font-size: 15px;}
-        .mainproblemText {font-size: 15px;}
+        .problemText {font-size: 15px;}
+        .flex-container {background-color: black; display: flex; padding-left: 290px;}
+        .flex-container > div {margin: 5px; font-size: 30px; height: 80px; align-items: center; text-align: center;}
+        ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;}
+        li {float: left;}
+        li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+        li a:hover {background-color: #111;}
         .titlediv {text-align: center; align-items: center; background-color: black}
         .timediv {width: 150px; text-align: center; align-items: center; background-color: darkblue;}
         .loggeddiv {text-align: center; align-items: center; background-color: darkblue;}
-        .flex-container {background-color: black; display: flex; padding-left: 350px;}
-        .flex-container > div {margin: 5px; font-size: 30px; height: 90px; align-items: center; text-align: center;}
-        .maindiv {padding-left: 150px; padding-right: 150px; padding-bottom: 10px; padding-top: 1px;}
-        .mainOutline {border-style: solid; border-width: 3px; border-radius: 10px;}
-        .main {background-color: white; padding-left: 20px; text-align: center; padding-right: 20px; padding-bottom: 20px;}
+        .mainOutline {border-style: solid; border-width: 3px; border-radius: 10px; background-color: white;}
+        .maindiv {padding-left: 150px; padding-right: 150px; padding-bottom: 10px; padding-top: 5px;}
+        .main {padding-left: 20px; text-align: center; padding-right: 20px; padding-bottom: 20px;}
         .mainbody {text-align: center; padding-right: 20px;}
         .menuselect {background-color: aqua;}
         .DaysOnline {background-color: blueviolet;}
-        .mainProblems {outline-style: solid; outline-color: blue;}
-        .mainProblemsDiv {padding-left: 330px; padding-right: 330px;}
+        .Problems {outline-style: solid; outline-color: blue;}
+        .ProblemsDiv {padding-left: 330px; padding-right: 330px;}
         .footerDiv {padding-left: 150px; padding-right: 150px;}
         .footerText {background-color: white; text-align: center; border-style: solid; border-width: 3px; border-radius: 10px;}
     </style>
@@ -29,7 +33,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to FurryCode.com- Home Page - Everything Furry Code</title>
 </head>
-<!-- The very top part of the website. -->
+<!-- The Header and Navigation Bar -->
 <div class="flex-container">
     <div class="timediv">
         <h1 class="whiteText">Time</h1>
@@ -42,6 +46,16 @@
         <h1 class="whiteText">OUT</h1>
     </div>
 </div>
+<!-- Navigation Bar-->
+<ul>
+    <li><a class="active" href="Index.html">Home Page</a></li>
+    <li><a href="Create.html">Create Code</a></li>
+    <li><a href="TheCode.html">The Code</a></li>
+    <li><a href="Decode.html">Decode Code</a></li>
+    <li><a href="MemberSea.html">Memeber Search</a></li>
+    <li><a href="Memebers.html">Memebers</a></li>
+    <li><a href="Mis.html">Miscellaneous</a></li>
+</ul>
 <!-- Body Of The Website -->
 <body>
     <!-- The Main page box -->
@@ -65,10 +79,10 @@
                 <div class="DaysOnline">
                     <h1>Days Online Section</h1>
                 </div>
-                <div class="mainProblemsDiv">
-                    <div class="mainProblems">
-                        <h1 class="mainproblemText">If anyone runs across any problem, or FLASH, please let me know</h1>
-                        <h1 class="mainproblemText">using our Contact Form. Thank You, Max</h1>
+                <div class="ProblemsDiv">
+                    <div class="Problems">
+                        <h1 class="problemText">If anyone runs across any problem, or FLASH, please let me know</h1>
+                        <h1 class="problemText">using our Contact Form. Thank You, Max</h1>
                     </div>
                 </div>
             </div>
@@ -76,7 +90,7 @@
     </div>
     <div class="footerDiv">
         <div class="footerText">
-            <h1 class="mainproblemText">Footer Section</h1>
+            <h1 class="problemText">© FurryCode.com 2009-2023. All Rights Reserved.</h1>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
