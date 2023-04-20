@@ -8,24 +8,49 @@
         }
         .title {
             color: gold;
+            font-size: 50px;
         }
         .whiteText {
             color: white;
             font-size: 20px;
         }
-        .flex-container {
-            display: flex;
-        }
-        .flex-child {
+        .titlediv {
+            text-align: center;
+            align-items: center;
             background-color: black;
-            margin-right: 150px;
         }
-        .flex-child:first-child {
-            background-color: blue;
-            margin-right: 440px;
-        }
-        .flex-child:second-child {
+        .timediv {
+            width: 150px;
+            text-align: center;
+            align-items: center;
             background-color: darkblue;
+        }
+        .loggeddiv {
+            text-align: center;
+            align-items: center;
+            background-color: darkblue;
+        }
+        .flex-container {
+            background-color: aquamarine;
+            display: flex;
+            padding-left: 350px;
+        }
+        .flex-container > div {
+            margin: 5px;
+            font-size: 30px;
+            height: 100px;
+            align-items: center;
+            text-align: center;
+        }
+        .maindiv {
+            background-color: white;
+            padding-left: 20px;
+        }
+        .maindivv {
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 30px;
+            padding-bottom: 10px;
         }
     </style>
     <meta charset="UTF-8">
@@ -33,30 +58,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to FurryCode.com- Home Page - Everything Furry Code</title>
 </head>
-<header>
-    <!-- The very top part of the website. -->
-    <div class="flex-container">
-        <div class="flex-child time">
-            <div>
-                <h1 class="whiteText">Time</h1>
-            </div>
-        </div>
-        <div class="flex-child title">
-            <div>
-                <h1 class="title">FURRYCODE.COM</h1>
-            </div>
-        </div>
-        <div class="flex-child login">
-            <div>
-                <h1 class="whiteText">You Are</h1>
-                <h1 class="whiteText">Logged</h1>
-                <h1 class="whiteText">OUT</h1>
-            </div>
-        </div>
+
+<!-- The very top part of the website. -->
+<div class="flex-container">
+    <div class="timediv">
+        <h1 class="whiteText">Time</h1>
     </div>
-</header>
+    <div class="titlediv">
+        <h1 class="title">FURRYCODE.COM</h1>
+    </div>
+    <div class="loggeddiv">
+        <h1 class="whiteText">You Are Logged</h1>
+        <h1 class="whiteText">OUT</h1>
+    </div>
+</div>
 <!-- Body Of The Website -->
 <body>
-    <h1>Hello Testing</h1>
+    <!-- The main page box -->
+    <div class="maindivv">
+        <div class="maindiv">
+            <h1 class="maintitle">Welcome to... <b>FurryCode.com</b></h1>
+        </div>
+    </div>
 </body>
 </html>
