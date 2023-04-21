@@ -8,6 +8,7 @@
         .whiteText {color: white; font-size: 20px;}
         .mainbodytext {font-size: 15px;}
         .problemText {font-size: 15px;}
+        .ButtonText {font-size: 25px;}
         .flex-container {background-color: black; display: flex; padding-left: 290px;}
         .flex-container > div {margin: 5px; font-size: 30px; height: 80px; align-items: center; text-align: center;}
         ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;}
@@ -21,11 +22,14 @@
         .ProblemsDiv {padding-left: 330px; padding-right: 330px;}
         .footerDiv {padding-left: 150px; padding-right: 150px;}
         .footerText {background-color: white; text-align: center; border-style: solid; border-width: 3px; border-radius: 10px;}
+        .maindiv {padding-left: 150px; padding-right: 150px; padding-bottom: 10px; padding-top: 5px; align-items: center; text-align: center;}
+        .HelpInstroDiv {background-color: gold; padding-left: 50px; text-align: center; height: 40px; align-items: center;}
+        .EngOpen {background-color: limegreen; font-size: 20px; border-radius: 15px; width: 110px; border: 1px solid black; height: 25px;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to FurryCode.com - Create Code English</title>
 </head>
 <!-- The Header and Navigation Bar -->
 <div class="flex-container">
@@ -42,7 +46,7 @@
 </div>
 <!-- Navigation Bar-->
 <ul>
-    <li><a class="active" href="Index.html">Home Page</a></li>
+    <li><a class="active" href="/">Home Page</a></li>
     <li><a href="Create.html">Create Code</a></li>
     <li><a href="TheCode.html">The Code</a></li>
     <li><a href="Decode.html">Decode Code</a></li>
@@ -51,6 +55,12 @@
     <li><a href="Mis.html">Miscellaneous</a></li>
 </ul>
 <body>
-    
+    <!-- The main Window -->
+    <div class="maindiv">
+        <div class="HelpInstroDiv">
+            <h1 class="ButtonText">English Help Instructions <button class="EngOpen">OPEN</button> ||  Deutsch Version - Klicken Sie hier</h1>
+        </div>
+        <button class="BeginButton">Begin The Creation Process</button>
+   </div>
 </body>
 </html>
